@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Product list with cart</title>
+    <link rel="stylesheet" href="src/styles.css" />
+    <script src="public/bundle.js" defer></script>
+  </head>
+  <body>
+    <main class="main">
+      <section class="desserts">
+        <h1 class="desserts__title">Desserts</h1>
+        <div class="desserts__grid">
+          <!-- Desert -->
+          <!-- <div class="desserts__card">
+            <div class="card__picture">
+              <img
+                src="assets/images/image-waffle-desktop.jpg"
+                alt=""
+                class="card__img"
+              />
+              <button id="btnAñadir" class="card__button card__button--active">
+                <img src="assets/images/icon-add-to-cart.svg" alt="" />Add to
+                Cart
+              </button>
+              <div class="card__button">
+                <button class="btnMasMenos">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="10"
+                    height="2"
+                    viewBox="0 0 10 2"
+                    class="svg"
+                  >
+                    <path d="M0 .375h10v1.25H0V.375Z" />
+                  </svg>
+                </button>
+
+                <span id="cantidad">1</span>
+                <button class="btnMasMenos">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="10"
+                    height="10"
+                    viewBox="0 0 10 10"
+                    class="svg"
+                  >
+                    <path
+                      d="M10 4.375H5.625V0h-1.25v4.375H0v1.25h4.375V10h1.25V5.625H10v-1.25Z"
+                    />
+                  </svg>
+                </button>
+              </div>
+            </div>
+
+            <div class="card__content">
+              <p class="card__type">Waffle</p>
+              <h4 class="card__title">Waffle with Berries</h4>
+              <p class="card__price">$6.50</p>
+            </div>
+          </div> -->
+        </div>
+      </section>
+
+      <aside class="cart">
+        <h2>Your Cart (<span id="total-productos-carrito">0</span>)</h2>
+        <div id="carrito-vacio" class="carrito__vacio carrito__vacio--active">
+          <img
+            src="assets/images/illustration-empty-cart.svg"
+            alt="carrito vacio"
+          />
+          <p>Your added items will appear here</p>
+        </div>
+        <div class="cart__body" id="carrito-body">
+          <!-- <div class="cart__product">
+            <div class="product__content">
+              <h5>Classic Tiramisu</h5>
+              <p class="product__details">
+                <span id="cantidad-producto">2x</span>
+                <span id="total-x-unidad">@ $5.50</span>
+                <span id="total-x-unidades">$11.00</span>
+              </p>
+            </div>
+            <button class="product__delete">
+              <img
+                src="assets/images/icon-remove-item.svg"
+                alt="eliminarbtn"
+                class="cart__img"
+              />
+            </button>
+          </div> -->
+        </div>
+        <div class="cart__footer">
+          <p class="cart__total">
+            Order Total<span id="precio-total">$50</span>
+          </p>
+
+          <p class="cart__carbon">
+            <img
+              src="assets/images/icon-carbon-neutral.svg"
+              alt="carbon-neutral"
+            />
+            This is a <strong>carbon-neutral</strong> delivery
+          </p>
+
+          <button class="btn__confirmation" id="btnConfirm">
+            Confirm Order
+          </button>
+        </div>
+      </aside>
+    </main>
+
+    <div class="confirm">
+      <div class="confirm__main">
+        <img
+          src="assets/images/icon-order-confirmed.svg"
+          alt=""
+          class="confirm__checked"
+        />
+        <h1 class="confirm__title">Order Confirmed</h1>
+        <p class="confirm__paragraph">We hope you enjoy your food!</p>
+        <div class="confirm__body">
+          <div class="confirm__products">
+            <!-- product -->
+            <!-- <div class="confirm__content">
+              <div class="confirm__thumb">
+                <img
+                  src="assets/images/image-baklava-thumbnail.jpg"
+                  alt="thumb"
+                  class="confirm__img"
+                />
+                <div class="confirm__texts">
+                  <h4 class="confirm__product">Classic Tiramisu</h4>
+                  <p class="confirm__details">
+                    <span class="confirm__cantidad">1x</span
+                    ><span class="confirm__unidad">@$5.50</span>
+                  </p>
+                </div>
+              </div>
+
+              <p class="confirm__price">$5.00</p>
+            </div> -->
+          </div>
+
+          <p class="confirm__total">
+            <span>Order Total</span><span id="confirm__price">$40</span>
+          </p>
+        </div>
+        <button class="btn__confirmation" id="btnNewOrder">
+          Start New Order
+        </button>
+      </div>
+    </div>
+  </body>
+</html>
